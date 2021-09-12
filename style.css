@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  transition: 1s ease-in all;
+}
+
+header img {
+  max-width: 150px;
+}
+
+header button {
+  background-color: transparent;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 86px;
+  height: 39px;
+  font-family: sans-serif;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.25s ease all;
+}
+
+header button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.main-title {
+  color: #f9f9f9;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: -5px;
+  margin-top: -150px;
+}
+
+.main-subtitle {
+  color: #f9f9f9;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.main-button {
+  padding: 12px 25px;
+  background-color: #ffbc00;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-color: #ffbc00;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+.main-button:hover {
+  color: #fff;
+}
+
+.overlay {
+  background-image: url("./images/background.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
